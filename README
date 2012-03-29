@@ -1,0 +1,14 @@
+This is the first version. Seems to work, but I haven't tested it
+heavily, yet.
+
+Right now it sorts the entire directory listing at once. I'm
+considering changing that to do an incremental sort. If it were common
+for programs to request partial directory listings, that would
+probably be a safe bet.  But since most of them seem to read
+everything in (so they can sort it; sigh), we're probably better
+off sticking with the more efficient sort.
+
+Pull requests for bug fixes appreciated; pull requests to turn it into
+something fancier are less appreciated.
+
+- Jay Kominek
